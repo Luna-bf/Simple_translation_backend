@@ -1,0 +1,41 @@
+body {
+    font-family: tahoma;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+header div {
+    padding: 10px;
+}
+
+div a {
+    text-decoration: none;
+    color: midnightblue;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    margin-top: 10px;
+    background-color: #fff;
+    border: solid thin #aaa;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+section {
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+}
