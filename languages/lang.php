@@ -20,15 +20,18 @@ function getLanguageFile() {
     return 'languages/'.$_SESSION['lang'].'.php';
 }
 
-#Le paramètre $str sera les mots à traduire (voir phtml)
+#Mon paramètre est une variable nommée 'str' car je veux récupérer une chaine de caractère
 function __($str) {
-    
+
+    #Je définis lang comme une variable globale pour pouvoir récupérer la langue sélectionnée depuis le fichier où elle est chargée
     global $lang;
+
+    #Si il y a une string dans $lang qui correspond à un élément en particulier (ex: 'Langues' => 'Languages').
     if(!empty($lang[$str])) {
-        return $lang[$str];
+        return $lang[$str]; #Alors on retourne cette string dans la langue sélectionnée.
+    } else {
+        return $str; #Sinon on retourne la string dans la langue par défaut.
     }
-    
-    return $str;
 }
 
 ?>
