@@ -6,11 +6,9 @@ if(session_status() === PHP_SESSION_NONE) {
     session_start(); #Si aucune session n'est ouverte, on en ouvre une nouvelle et on exécute le reste du code.
 }
 
-require getLanguageFile();
-
 function getLanguageFile() {
 
-    #Je vérifie si il existe une autre langue (?? / équivalent de isset), si ce n'est pas le cas, je met le français comme langue par défaut.
+    # Je vérifie si il existe une autre langue (?? / équivalent de isset), si ce n'est pas le cas, je met le français comme langue par défaut.
     $_SESSION['lang'] = $_SESSION['lang'] ?? 'fr';
 
     #Si l'utilisateur change la langue alors il faut récupérer la langue en question (GET) si l'utilisateur ne change pas la langue alors on remet la langue par défaut.
@@ -19,6 +17,8 @@ function getLanguageFile() {
     #Enfin, je concatène $_SESSION['lang'] à l'extension .php pour aller chercher le fichier correspondant à la langue sélectionnée. Cela fonctionne même si je rajoute 50 langues.
     return 'languages/'.$_SESSION['lang'].'.php';
 }
+
+require getLanguageFile();
 
 #Mon paramètre est une variable nommée 'str' car je veux récupérer une chaine de caractère
 function __($str) {
