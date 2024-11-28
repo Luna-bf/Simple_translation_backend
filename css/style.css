@@ -18,20 +18,37 @@ div a {
     color: midnightblue;
 }
 
-.dropdown {
+.dropdown-menu {
     position: relative;
+    display: inline-block;
+}
+
+.drop-link {
+    text-decoration: none;
 }
 
 .dropdown-content {
+    display: none;
     position: absolute;
-    margin-top: 10px;
     background-color: #fff;
-    border: solid thin #aaa;
-    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
 }
 
-.hide {
-    display: none;
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #fbfaf5;
+    border-radius: 5px;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
 }
 
 section {
