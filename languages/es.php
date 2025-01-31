@@ -1,15 +1,6 @@
 <?php
 
 $lang = [
-    'Accueil' => 'Inicio',
-    'Compétences' => 'Habilidades',
-    'Formations' => 'Formacións',
-    'Projets' => 'Proyectos',
-    'Contact' => 'Contacto',
-    'Bonjour, John' => 'Holà, John',
-    'Profil' => 'Perfil',
-    'Paramètres' => 'Ajustes',
-    'Se déconnecter' => 'Finalizar la sesión',
     'Langue' => 'Idioma',
     'Celeste, c\'est quoi ?' => '¿Qué es Celeste?',
     'Celeste est un jeu de plateforme acclamé par la critique créé par Extremely OK Games. Le jeu est sorti le 25 janvier 2018 sur Nintendo Switch, PlayStation 4, Xbox One, PC, Mac et Linux. Le jeu suit une jeune femme nommée Madeline alors qu\'elle escalade la montagne quelque peu magique de Celeste, faisant face à l\'opposition des obstacles naturels de la montagne et d\'elle-même.' => 'Celeste es un juego de plataformas aclamado por la crítica creado por Extremely OK Games. El juego fue lanzado el 25 de enero de 2018 para Nintendo Switch, PlayStation 4, Xbox One, PC, Mac y Linux. El juego sigue a una joven llamada Madeline mientras escala la algo mágica Montaña Celeste, enfrentándose a la oposición de los obstáculos naturales de la montaña y de ella misma.',
