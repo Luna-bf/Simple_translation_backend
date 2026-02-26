@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="author" content="Luna BURATTI-FAYOLLE">
     <title>Simple translation (backend)</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="favicon/favicon.png" />
+    <link rel="stylesheet" href="../public/css/style.css" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="../public/favicon/favicon.png" />
 </head>
 <body>
     <header>
