@@ -1,6 +1,6 @@
 <?php
 
-require 'languages/lang.php';
-require 'pages/page.php';
+require 'src/languages/lang.php';
+require 'templates/page.php';
 
 ?>

@@ -15,7 +15,7 @@ function getLanguageFile() {
     $_SESSION['lang'] = $_GET['lang'] ?? $_SESSION['lang'];
 
     #Enfin, je concatène $_SESSION['lang'] à l'extension .php pour aller chercher le fichier correspondant à la langue sélectionnée. Cela fonctionne même si je rajoute 50 langues.
-    return 'languages/'.$_SESSION['lang'].'.php';
+    return 'src/languages/'.$_SESSION['lang'].'.php';
 }
 
 require getLanguageFile();
