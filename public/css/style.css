@@ -25,6 +25,7 @@ div a {
 
 .drop-link {
     text-decoration: none;
+    font-size: 18px;
 }
 
 .dropdown-content {
@@ -55,4 +56,8 @@ section {
     padding: 10px;
     max-width: 600px;
     margin: auto;
+}
+
+.second-article {
+    margin-top: 52px;
 }
