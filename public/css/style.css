@@ -15,7 +15,7 @@ header div {
 
 div a {
     text-decoration: none;
-    color: midnightblue;
+    color: #191970;
 }
 
 .dropdown-menu {
@@ -25,7 +25,7 @@ div a {
 
 .drop-link {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 19.5px;
 }
 
 .dropdown-content {
@@ -34,11 +34,12 @@ div a {
     background-color: #fff;
     border: 1px solid #aaa;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .dropdown-content a {
     display: block;
-    color: black;
+    color: #000;
     padding: 1em;
     text-decoration: none;
 }
@@ -60,4 +61,122 @@ section {
 
 .second-article {
     margin-top: 52px;
+}
+
+/*** MEDIA QUERIES ***/
+/* 0px – 639px (Mobile) */
+@media (max-width: 639.9px) {
+
+    header {
+        justify-content: flex-end;
+    }
+
+    .drop-link {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .dropdown-content {
+        right: 10px;
+        font-size: 20px;
+    }
+
+    section {
+        max-width: 400px;
+    }
+
+    .first-article>h1 {
+        font-size: 36px;
+    }
+
+    .first-article>p,
+    .second-article>p {
+        font-size: 18px;
+    }
+
+    .second-article {
+        margin-top: 52px;
+    }
+
+    .second-article>h2 {
+        font-size: 36px;
+    }
+}
+
+/* 640px - 767px (Small Tablet/Large phone) */
+@media (min-width: 640px) and (max-width: 767.9px) {
+
+    header {
+        justify-content: flex-end;
+    }
+
+    .drop-link {
+        text-decoration: none;
+        font-size: 19px;
+    }
+
+    .dropdown-content {
+        right: 10px;
+        font-size: 19px;
+    }
+
+    section {
+        max-width: 500px;
+    }
+
+    .first-article>h1 {
+        font-size: 36px;
+    }
+
+    .first-article>p,
+    .second-article>p {
+        font-size: 17px;
+    }
+
+    .second-article {
+        margin-top: 48px;
+    }
+
+    .second-article>h2 {
+        font-size: 35px;
+    }
+}
+
+/* 767px - 1023px (Tablet) */
+@media (min-width: 768px) and (max-width: 1023.9px) {
+
+    header {
+        justify-content: flex-end;
+    }
+
+    .drop-link {
+        text-decoration: none;
+        font-size: 21px;
+    }
+
+    .dropdown-content {
+        right: 10px;
+        font-size: 21px;
+    }
+
+    section {
+        max-width: 580px;
+    }
+
+    .first-article>h1 {
+        font-size: 35px;
+    }
+
+    .first-article>p,
+    .second-article>p {
+        font-size: 18px;
+    }
+
+    .second-article {
+        margin-top: 48px;
+    }
+
+    .second-article>h2 {
+        font-size: 34px;
+    }
 }
